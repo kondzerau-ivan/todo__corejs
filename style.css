@@ -42,6 +42,8 @@ form > button:hover {
 
 ul {
     list-style: none;
+    display: grid;
+    gap: 1.5rem;
     width: 500px;
     margin: 2rem auto;
     padding: 0;
@@ -50,13 +52,23 @@ ul {
 .todo-item {
     display: flex;
     gap: 1rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid violet;
 }
+
+.todo-item-inner {
+  width: 100%;
+}
+
 .close {
     color: red;
     cursor: pointer;
     font-weight: bolder;
 }
+
 .close:hover {
     color:tomato
 }
